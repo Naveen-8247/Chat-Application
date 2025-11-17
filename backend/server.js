@@ -8,9 +8,27 @@ const {
 } = require('./mockData');
 
 const app = express();
-const port = 5000;
 
-app.use(cors());
+const PORT = process.env.PORT || 5000;
+
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://chat-application-client-side.vercel.app', 
+  'https://chat-application-server-fggy.onrender.com'
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST']
+}));
+
 app.use(express.json());
 
 app.get('/api/sessions', (req, res) => {
@@ -47,6 +65,6 @@ app.post('/api/chat/:id', (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
