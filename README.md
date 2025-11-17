@@ -105,15 +105,7 @@ Styling	Tailwind CSS
 Routing	React Router DOM
 Icons	Lucide React
 Backend (External API)	Express + Node.js (hosted on Render)
-🧩 Project Structure (Frontend)
-src/
-├── components/
-├── pages/
-├── hooks/
-├── utils/
-├── App.js
-├── index.js
-└── styles/
+
 
 📝 Troubleshooting
 ❗ Chat history not loading?
