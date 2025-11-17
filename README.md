@@ -1,6 +1,6 @@
 🌟 Lumibyte Chat Application
 
-A modern, elegant, and fully responsive AI-powered chat application built with React and styled using Tailwind CSS.
+A modern, elegant, and fully responsive AI-powered chat application built with React and Tailwind CSS.
 It seamlessly connects with a dedicated backend API to deliver:
 
 Conversational responses
@@ -16,41 +16,47 @@ This project ensures a smooth and interactive chat experience across all devices
 🚀 Features
 📌 Persistent Chat History
 
-Automatically saves all chat sessions and displays them beautifully in the sidebar for quick access.
+Automatically saves all chat sessions
+
+Displays them beautifully in the sidebar for quick access
 
 ⚡ Real-time Updates
 
-Chats, titles, and history refresh automatically whenever a new message is sent.
+Chats, titles, and history refresh automatically
+
+Updates instantly when a new message is sent
 
 📊 Structured Data Rendering
 
-Handles model-generated structured data and displays it in clean, responsive HTML tables.
+Supports structured data from the model
+
+Renders clean, responsive HTML tables
 
 👍 User Feedback
 
-Users can like or dislike individual model responses.
+Users can like or dislike individual model responses
 
 📱 Fully Responsive UI
 
-Optimized for mobile, tablet, and desktop.
+Optimized for mobile, tablet, and desktop
 
 🌗 Theme Toggle
 
-Light and Dark mode support with smooth transitions.
+Smooth switching between Light and Dark mode
 
 🛠️ Architecture Overview
 
 This repository represents the frontend client of the Lumibyte Chat System.
 
-All conversational logic
+All of the following are powered by an external backend API:
+
+Conversational logic
 
 Session storage
 
 Response generation
 
 Feedback handling
-
-…are powered by an external backend API.
 
 🌐 API Base URL
 
@@ -76,27 +82,30 @@ npm install
 npm start
 
 
-The app will launch in your browser at:
+Your app will be available at:
 
 http://localhost:3000
 
 🖥️ Usage Guide
 ➕ Start a New Chat
 
-Click “New Chat” in the sidebar or type your first message on the home screen (/).
+Click “New Chat” in the sidebar
+
+Or type your first message on the home screen (/)
 
 📂 View Chat History
 
-All chat sessions appear under History.
-Click any session title to reopen and review it.
+All chat sessions appear under History
+
+Click any session title to reopen and review it
 
 🌗 Switch Themes
 
-Use the Sun/Moon icon in the header to toggle between Light and Dark mode.
+Use the Sun/Moon icon in the header to toggle Light/Dark mode
 
 👍 Provide Feedback
 
-Click Thumbs Up / Thumbs Down under structured responses.
+Use Thumbs Up / Thumbs Down below structured responses
 
 💻 Tech Stack
 Category	Technology
@@ -104,21 +113,23 @@ Frontend	React
 Styling	Tailwind CSS
 Routing	React Router DOM
 Icons	Lucide React
-Backend (External API)	Express + Node.js (hosted on Render)
-
-
+Backend (API)	Express + Node.js (Hosted on Render)
 📝 Troubleshooting
 ❗ Chat history not loading?
 
-The backend may be sleeping (Render free-tier). Give it 30–60 seconds to wake up.
+The backend may be sleeping (Render free-tier)
+
+Give it 30–60 seconds to wake up
 
 ❗ New messages not showing?
 
-Open DevTools → Console → check for network errors.
+Open Developer Tools → Console
 
-A "Failed to fetch" error usually means the server is offline or waking up.
+Check for network errors
 
-Confirm API URL matches the deployed backend.
+“Failed to fetch” → backend server may be offline or waking
+
+Confirm the API base URL is correct
 
 🤝 Contributing
 
