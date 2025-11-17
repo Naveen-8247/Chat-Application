@@ -1,78 +1,134 @@
-Lumibyte Chat Application
+🌟 Lumibyte Chat Application
 
-This project is a modern, responsive chat application built with React and styled using Tailwind CSS. It interacts with a dedicated backend API to provide conversational responses, structured data analysis, and persistent session history.
+A modern, elegant, and fully responsive AI-powered chat application built with React and styled using Tailwind CSS.
+It seamlessly connects with a dedicated backend API to deliver:
 
-🚀 Key Features
+Conversational responses
 
-Persistent Chat History: Automatically saves conversation sessions and displays them in the sidebar for easy retrieval.
+Structured data analysis
 
-Real-time Updates: Sessions are updated and refreshed automatically when a new conversation is started or a title is generated.
+Persistent session history
 
-Structured Data Support: Capable of receiving and displaying data from the model in clean, responsive HTML tables.
+Real-time UI updates
 
-User Feedback: Ability to like or dislike model responses.
+This project ensures a smooth and interactive chat experience across all devices.
 
-Responsive UI: Fully adapts to mobile, tablet, and desktop screen sizes.
+🚀 Features
+📌 Persistent Chat History
 
-Theme Toggle: Supports both light and dark modes.
+Automatically saves all chat sessions and displays them beautifully in the sidebar for quick access.
 
-🛠️ Architecture and Setup
+⚡ Real-time Updates
 
-This application is the frontend client that consumes an external API service for all data and conversation logic.
+Chats, titles, and history refresh automatically whenever a new message is sent.
 
-🌐 API Endpoint
+📊 Structured Data Rendering
 
-The application is configured to connect to the following external API base URL for all chat and session management:
+Handles model-generated structured data and displays it in clean, responsive HTML tables.
 
-[https://chat-application-server-fggy.onrender.com/api](https://chat-application-server-fggy.onrender.com/api)
+👍 User Feedback
 
+Users can like or dislike individual model responses.
+
+📱 Fully Responsive UI
+
+Optimized for mobile, tablet, and desktop.
+
+🌗 Theme Toggle
+
+Light and Dark mode support with smooth transitions.
+
+🛠️ Architecture Overview
+
+This repository represents the frontend client of the Lumibyte Chat System.
+
+All conversational logic
+
+Session storage
+
+Response generation
+
+Feedback handling
+
+…are powered by an external backend API.
+
+🌐 API Base URL
+
+All chat and session communication is handled through:
+
+https://chat-application-server-fggy.onrender.com/api
+
+
+If you deploy your own backend, update this base URL accordingly.
 
 📦 Local Setup
 
-To run the frontend locally, ensure you have Node.js and npm installed.
+Follow these steps to run the frontend locally:
 
-Clone the repository:
+1️⃣ Clone the Repository
+git clone <your-repo-url>
+cd <your-repo-name>
 
-git clone [your-repo-url]
-cd [your-repo-name]
-
-
-Install dependencies:
-
+2️⃣ Install Dependencies
 npm install
 
-
-Start the development server:
-
+3️⃣ Start the Development Server
 npm start
 
 
-The application should now be accessible in your browser, typically at http://localhost:3000.
+The app will launch in your browser at:
+
+http://localhost:3000
 
 🖥️ Usage Guide
+➕ Start a New Chat
 
-Start a New Chat: Click the "New Chat" button in the sidebar or simply send a message when on the home screen (/).
+Click “New Chat” in the sidebar or type your first message on the home screen (/).
 
-View History: Past sessions are listed under the "History" section. Click any title to load the conversation.
+📂 View Chat History
 
-Theme Switch: Use the Sun/Moon icon in the header to switch between Light Mode and Dark Mode.
+All chat sessions appear under History.
+Click any session title to reopen and review it.
 
-Feedback: Use the Thumbs Up or Thumbs Down icons below a structured response to provide feedback.
+🌗 Switch Themes
 
-💻 Technologies Used
+Use the Sun/Moon icon in the header to toggle between Light and Dark mode.
 
-Frontend Framework: React
+👍 Provide Feedback
 
-Styling: Tailwind CSS
+Click Thumbs Up / Thumbs Down under structured responses.
 
-Routing: React Router DOM
-
-Icons: Lucide React
+💻 Tech Stack
+Category	Technology
+Frontend	React
+Styling	Tailwind CSS
+Routing	React Router DOM
+Icons	Lucide React
+Backend (External API)	Express + Node.js (hosted on Render)
+🧩 Project Structure (Frontend)
+src/
+├── components/
+├── pages/
+├── hooks/
+├── utils/
+├── App.js
+├── index.js
+└── styles/
 
 📝 Troubleshooting
+❗ Chat history not loading?
 
-If chat history is not displaying in the sidebar, or if new messages fail to load:
+The backend may be sleeping (Render free-tier). Give it 30–60 seconds to wake up.
 
-Check the API Status: The backend service (hosted on Render) may be "sleeping" if it hasn't been used recently. It may take up to a minute to wake up and process the first request.
+❗ New messages not showing?
 
-Browser Console: Check your browser's developer console (F12) for network errors. A Failed to fetch error confirms the backend server is unreachable.
+Open DevTools → Console → check for network errors.
+
+A "Failed to fetch" error usually means the server is offline or waking up.
+
+Confirm API URL matches the deployed backend.
+
+🤝 Contributing
+
+Pull requests are welcome!
+For major changes, please open an issue first to discuss your ideas.
