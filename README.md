@@ -55,8 +55,6 @@ All chat and session communication is handled through:
 
 https://chat-application-server-fggy.onrender.com/api
 
-yaml
-Copy code
 
 If you deploy your own backend, update this base URL accordingly.
 
@@ -71,17 +69,10 @@ Follow these steps to run the frontend locally:
 git clone <your-repo-url>
 cd <your-repo-name>
 2️⃣ Install Dependencies
-bash
-Copy code
 npm install
 3️⃣ Start the Development Server
-bash
-Copy code
 npm start
 Your app will be available at:
-
-arduino
-Copy code
 http://localhost:3000
 🖥️ Usage Guide
 ➕ Start a New Chat
